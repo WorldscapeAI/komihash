@@ -668,7 +668,7 @@ void kh_m128( const uint64_t u, const uint64_t v,
 		Seed3 ^= Seed6; \
 		Seed2 ^= Seed5; \
 	\
-	} while KOMIHASH_LIKELY( MsgLen > 63 )
+	} while ( MsgLen > 63 )
 
 /**
  * @brief The hashing epilogue function (for internal use).
